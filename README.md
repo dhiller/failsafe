@@ -1,7 +1,7 @@
 The failsafe plugin
 ===
 
-Contains presentation introducing the maven failsafe plugin.
+Contains (german) presentation introducing the maven failsafe plugin.
 
 Requirements
 ---

@@ -191,9 +191,7 @@ nach den Unit-Tests ausgefuehrt.
 
 ### Unit -> Integration Test (2)
 
-```java
-javaBackendReturnCodeTest.renameTo("BackendReturnCodeIT");
-```
+BackendReturnCodeTest.java -> BackendReturnCodeIT.java
 
 [source,java]
 ----
@@ -240,7 +238,12 @@ Dann werden die reinen Unit-Tests in die zuvor neu angelegte ``*Test`` Klasse ve
 
 ### *Test und *IT parallel (4)
 
-Abschliessend wird der Spring-Kontext der ``*Test`` Klasse soweit wie moeglich ausgeduennt oder der Test-Runner auf ``JUnit4.class`` gesetzt und die echten Abhaengigkeiten der ``*Test`` Klasse werden durch Mocks ersetzt.
+Abschliessend wird entweder
+
+* der Spring-Kontext der ``*Test`` Klasse soweit wie moeglich ausgeduennt oder
+* der Test-Runner auf ``JUnit4.class`` gesetzt,  +
+  die echten Abhaengigkeiten der ``*Test`` Klasse durch Mocks ersetzt und abschliessend  +
+  die ``@ContextConfiguration`` entfernt
 
 
 ### *Test und *IT parallel (5)
